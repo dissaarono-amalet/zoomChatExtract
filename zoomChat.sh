@@ -43,37 +43,22 @@ done
 
 # 一番最後に作られたフォルダを取得のチャットファイルを設定
 filePath=${lastFolder}"/meeting_saved_chat.txt"
-<<<<<<< HEAD
-
-=======
-# チャットを整理するCSVファイルのパスを設定
-csvPath=${lastFolder}"/meeting.csv"
-
-# 空のCSVファイルを作成
-cp /dev/null "${csvPath}"
->>>>>>> f3249a432f7b597776f2492ec1f7e975d77d8a9f
 # チャットの差分ファイルを作成
 cp /dev/null "${diffFile}"
 # 抽出コメントのファイルを作成
 cp /dev/null "${comment}"
-<<<<<<< HEAD
 # 空のUTF-8BOM付きCSVファイルを作成
 csvPath=${lastFolder}"/meeting.csv"
+cp /dev/null "${csvpath}"
 echo "時刻,送信者,送り先,コメント" >> "${diffFile}"
 LC_ALL=C sed -e $'1s/^/\xef\xbb\xbf/' "${diffFile}" > "${csvPath}"
-=======
->>>>>>> f3249a432f7b597776f2492ec1f7e975d77d8a9f
 
 # 最後の参照行を設定
 prevTotalLine=0
 
 while :
 do
-<<<<<<< HEAD
 	# 現在のチャットファイルの最終行数を取得
-=======
-	# 現在のチャットファイルの最終行を取得
->>>>>>> f3249a432f7b597776f2492ec1f7e975d77d8a9f
 	nowTotalLine=`cat "${filePath}"|wc -l`
 
 	# 最後の参照行数と最終行が同じ場合は（追加のコメントがない）処理をしない
