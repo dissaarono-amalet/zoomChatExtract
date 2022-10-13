@@ -24,9 +24,9 @@ $zoomPath = "==zoomアプリのレコーディングの保存場所==";
 # レコーディングの保存場所にある文字列をコピーして「"」の間に
 # 貼り付けしてください
 # mac の場合は
-#$zoomPath="/Users/ユーザー名/Documents/Zoom";
+#　　　$zoomPath="/Users/ユーザー名/Documents/Zoom";
 # windows の場合は
-#$zoomPath="C:\Users\ユーザー名\Documents\Zoom";
+#　　　$zoomPath="C:\Users\ユーザー名\Documents\Zoom";
 # の様になると思います。
 
 $folderDelimiter = "/";
