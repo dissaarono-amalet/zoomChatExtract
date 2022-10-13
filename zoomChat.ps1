@@ -18,7 +18,7 @@
 # 5. zoomが終了したらこのスクリプトを止める
 ###########################################
 
-$zoomPath = "zoomアプリのレコーディングの保存場所";
+$zoomPath = "==zoomアプリのレコーディングの保存場所==";
 # zoomアプリケーションの「設定」を開き（歯車マーク）
 # 「レコーディング」を開いてください（◉のマーク）
 # レコーディングの保存場所にある文字列をコピーして「"」の間に
@@ -40,7 +40,6 @@ if (!(Test-Path $zoomPath)) {
 	mkdir $zoomPath + $folderDelimiter + "000";
 }
 
-$diffFile = $zoomPath + $folderDelimiter + "000" + $folderDelimiter + "diff.txt";
 $comment = $zoomPath + $folderDelimiter + "000" + $folderDelimiter + "comment.txt";
 
 # 一番最後に作られたフォルダを取得
