@@ -12,11 +12,11 @@ zoomのチャットコメントを匿名で画面に表示させたい
 - zoomアプリケーションの「設定」を開き（歯車マーク）
 - 「レコーディング」を開いてください（◉のマーク）
 - レコーディングの保存場所にある文字列をコピーして「"」の間に貼り付けしてください
-- - mac の場合は
-$zoomPath="/Users/ユーザー名/Documents/Zoom"
-- - windows の場合は
-$zoomPath="C:\Users\ユーザー名\Documents\Zoom";
-の様になると思います。
+  - mac の場合は
+    $zoomPath="/Users/ユーザー名/Documents/Zoom"
+  - windows の場合は
+    $zoomPath="C:\Users\ユーザー名\Documents\Zoom";
+  の様になると思います。
 1. OBSのテキストボックスにスクロール設定で 「/Users/ユーザー名/Zoom/000/comment.txt」にリンクして、配信画面を作成する
 1. zoomのカメラ設定をOBSにする
 ### 使用方法
